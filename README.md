@@ -13,13 +13,14 @@ Detection and response of suspicious activities such as brute force attacks is c
 
 ## Tools Used
 - Splunk Enterprise
-- Ubuntu VM
-- Windows 10 VM
+- Ubuntu VM (Splunk Server)
+- Windows 10 VM (Splunk Universal Forwarder)
+- Kali Linux VM (Splunk Universal Forwarder)
 
 ## Project Setup
 
 ### Ubuntu VM
-Install Splunk:
+Install Splunk Enterprise:
 - Go to the following link: <a href="https://www.splunk.com/en_us/download/splunk-enterprise.html">Download Splunk Enterprise</a>
 - Create your account.
 - Verify your email to activate your Splunk account.
@@ -42,3 +43,8 @@ Install Splunk:
   ![image](https://github.com/user-attachments/assets/d26d2b33-d5c5-4d25-8c0c-a74ec02d3c3a)
 - Open the link on the web browser in the Ubuntu VM. This will take you to the login page where you will be asked to use the credentials that you created earlier:
   ![image](https://github.com/user-attachments/assets/1df131f9-9885-4e75-8002-ef3b25ca8b4a)
+
+### Windows 10 VM
+
+
+  
