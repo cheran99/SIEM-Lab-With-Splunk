@@ -2,14 +2,14 @@
 
 ## Introduction
 
-Detection and response of suspicious activities such as brute force attacks is crucial towards protecting the digital landscape. Because of this, a SIEM lab is essential to streamline threat detection and take the necessary steps to mitigate potential threats. This projects highlights the set up of a SIEM lab using Splunk Enterprise.
+Detection and response to suspicious activities, such as brute-force attacks, are crucial to protecting the digital landscape. Because of this, an SIEM lab is essential to streamline threat detection and mitigate potential threats. This project highlights the setup of an SIEM lab using Splunk Enterprise.
 
 ### Objectives
 1. Download and install Splunk on your local machine/virtual machine
 2. Configure Splunk to collect and ingest log data from host operating systems
 3. Create custom threat detection rules
 4. Simulate suspicious activities such as brute force logins
-5. Build dashboards to show contents of monitored logs
+5. Build dashboards to show the contents of monitored logs
 
 ## Tools Used
 - Splunk Enterprise
@@ -44,7 +44,7 @@ To download and install Splunk Enterprise:
 - Open the link on the web browser in the Ubuntu VM. This will take you to the login page where you will be asked to use the credentials that you created earlier:
   ![image](https://github.com/user-attachments/assets/1df131f9-9885-4e75-8002-ef3b25ca8b4a)
 
-### Downloading and Installing Universal Forwarder
+### Downloading and Installing the Universal Forwarder
 
 The purpose of Universal Forwarders is to remotely collect data from the host operating system and send it to the Splunk Enterprise instance. The Splunk server will ingest this data and create monitoring logs. The Universal Forwarder will be downloaded and installed on the Windows VM. 
 
@@ -58,10 +58,13 @@ To download and install the Universal Forwarder on the Windows VM:
 - Tick the box to accept the License Agreement and select "An on-premises Splunk Enterprise instance" to use this Universal Forwarder with:
   ![image](https://github.com/user-attachments/assets/9cd1f555-225a-4057-889c-a24c2512debe)
 - You will then be asked to create the credentials for the administrator account. Use the same credentials that you have made for the Splunk Enterprise instance:
+
   ![image](https://github.com/user-attachments/assets/10284a29-d77a-4345-bce5-dcbc2a6d0477)
-- Skip the "Deployment Server" page and this will take you to the Receiver Indexer page. Use the IP address for the Ubuntu VM and the default port number 9997:
+- Skip the "Deployment Server" page and this will take you to the "Receiver Indexer" page. Use the IP address for the Ubuntu VM and the default port number 9997. This will remotely send logs to the Splunk Enterprise instance:
+
   ![image](https://github.com/user-attachments/assets/e243dbef-5d92-4404-9198-72ecec7f5a5e)
-- Complete the installation. 
+- Complete the installation.
+  
 
 
 
@@ -74,7 +77,8 @@ To download and install the Universal Forwarder on the Windows VM:
 
 
 ## References
-- https://www.splunk.com/en_us/blog/learn/splunk-universal-forwarder.html 
+- <a href="https://www.splunk.com/en_us/blog/learn/splunk-universal-forwarder.html">Splunk Universal Forwarder</a> 
+- <a href="https://docs.splunk.com/Documentation/Forwarder/9.4.0/Forwarder/InstallaWindowsuniversalforwarderfromaninstaller"> Install a Windows universal forwarder</a>
 
 
   
