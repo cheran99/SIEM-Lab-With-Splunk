@@ -15,12 +15,12 @@ Detection and response of suspicious activities such as brute force attacks is c
 - Splunk Enterprise
 - Ubuntu VM (Splunk Server)
 - Windows 10 VM (Splunk Universal Forwarder)
-- Kali Linux VM (Splunk Universal Forwarder)
 
 ## Project Setup
 
-### Ubuntu VM
-Install Splunk Enterprise:
+### Downloading and Installing Splunk Enterprise on Ubuntu VM
+
+To download and install Splunk Enterprise:
 - Go to the following link: <a href="https://www.splunk.com/en_us/download/splunk-enterprise.html">Download Splunk Enterprise</a>
 - Create your account.
 - Verify your email to activate your Splunk account.
@@ -44,7 +44,37 @@ Install Splunk Enterprise:
 - Open the link on the web browser in the Ubuntu VM. This will take you to the login page where you will be asked to use the credentials that you created earlier:
   ![image](https://github.com/user-attachments/assets/1df131f9-9885-4e75-8002-ef3b25ca8b4a)
 
-### Windows 10 VM
+### Downloading and Installing Universal Forwarder
+
+The purpose of Universal Forwarders is to remotely collect data from the host operating system and send it to the Splunk Enterprise instance. The Splunk server will ingest this data and create monitoring logs. The Universal Forwarder will be downloaded and installed on the Windows VM. 
+
+To download and install the Universal Forwarder on the Windows VM:
+- Go to the following link: <a href="https://www.splunk.com/en_us/download/universal-forwarder.html">Download Universal Forwarder for Remote Data Collection</a>.
+- Choose the Windows 64-bit package to download and install:
+  ![image](https://github.com/user-attachments/assets/bdf3292b-0124-4aec-9679-e4905714c487)
+- Accept the agreement and click "Access Program".
+- This will download the package.
+- Once the download is complete, click on the file to set up the Universal Forwarder.
+- Tick the box to accept the License Agreement and select "An on-premises Splunk Enterprise instance" to use this Universal Forwarder with:
+  ![image](https://github.com/user-attachments/assets/9cd1f555-225a-4057-889c-a24c2512debe)
+- You will then be asked to create the credentials for the administrator account. Use the same credentials that you have made for the Splunk Enterprise instance:
+  ![image](https://github.com/user-attachments/assets/10284a29-d77a-4345-bce5-dcbc2a6d0477)
+- Skip the "Deployment Server" page and this will take you to the Receiver Indexer page. Use the IP address for the Ubuntu VM and the default port number 9997:
+  ![image](https://github.com/user-attachments/assets/e243dbef-5d92-4404-9198-72ecec7f5a5e)
+- Complete the installation. 
+
+
+
+  
+
+
+
+
+
+
+
+## References
+- https://www.splunk.com/en_us/blog/learn/splunk-universal-forwarder.html 
 
 
   
