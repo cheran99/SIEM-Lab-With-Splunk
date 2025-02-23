@@ -74,6 +74,19 @@ To download and install the Universal Forwarder on the Windows VM:
 
   ![image](https://github.com/user-attachments/assets/b641d0cc-68b5-4b0c-ba64-59d48cc46b83)
 
+- Connect the Universal Forwarder to the receiving indexer using the following command:
+
+  `./splunk add forward-server <host name or ip address>:<listening port>`
+- For example:
+
+  `./splunk add forward-server <host name or web server ip address>:9997`
+
+  ![image](https://github.com/user-attachments/assets/7b40bbb4-1f9d-4a3b-afa1-376de4125fd7)
+
+- Restart the Universal Forwarder using the following command:
+
+  `.\splunk restart`
+
 ### Configuring The Receiver
 
 - In the Ubuntu VM, go to the Splunk Web on the web browser using the Splunk Web interface: `http://ubuntu-1-VirtualBox:8000`:
