@@ -60,10 +60,42 @@ To download and install the Universal Forwarder on the Windows VM:
 - You will then be asked to create the credentials for the administrator account. Use the same credentials that you have made for the Splunk Enterprise instance:
 
   ![image](https://github.com/user-attachments/assets/10284a29-d77a-4345-bce5-dcbc2a6d0477)
-- Skip the "Deployment Server" page and this will take you to the "Receiver Indexer" page. Use the IP address for the Ubuntu VM and the default port number 9997. This will remotely send logs to the Splunk Enterprise instance:
+- Skip the "Deployment Server" page and this will take you to the "Receiver Indexer" page. You can use the IP address for the Ubuntu VM and the default port number 9997. This will remotely send logs to the Splunk Enterprise instance:
 
   ![image](https://github.com/user-attachments/assets/e243dbef-5d92-4404-9198-72ecec7f5a5e)
 - Complete the installation.
+- Once it is installed, go to the Control Panel to verify the installation:
+  ![image](https://github.com/user-attachments/assets/aca0abef-cb16-4a6e-b8b3-4ffc2717849f)
+- Open Powershell and run it as administrator.
+- Change the directory using the "cd" command to the directory where the Universal Forwarder is which is `C:\Program Files\SplunkUniversalForwarder\bin`.
+- Start the Universal Forwarder using the following command:
+
+  `.\splunk start`
+
+  ![image](https://github.com/user-attachments/assets/b641d0cc-68b5-4b0c-ba64-59d48cc46b83)
+
+### Configuring The Receiver
+
+- In the Ubuntu VM, go to the Splunk Web on the web browser using the Splunk Web interface: `http://ubuntu-1-VirtualBox:8000`:
+  ![image](https://github.com/user-attachments/assets/0cf3709e-ed67-4df3-919c-ea3bb11a1cf2)
+- Go to "Settings", then to "Forwarding and receiving":
+  ![image](https://github.com/user-attachments/assets/b692029b-233b-4265-af3e-69df581b5ff3)
+- Click "Configure receiving", and then click "New receiving port":
+  ![image](https://github.com/user-attachments/assets/3962cb88-ba0e-449b-88a6-5208c4e6cfeb)
+- Add port 9997 as the receiving port and then click save. This will be the port that the Receiver listens on to collect and ingest data from the host.
+- Restart Splunk for the changes to take effect using the following command:
+
+  `sudo /opt/splunk/bin/splunk restart`
+- Once restarted, log back into the Splunk Web.
+- To verify that Splunk is listening to logs, run the following command in the Terminal:
+
+  `sudo netstat -tulnp | grep 9997`
+  ![image](https://github.com/user-attachments/assets/9833eaea-7e90-46af-b33d-a3fc791587dc)
+
+  
+
+
+
   
 
 
@@ -79,6 +111,7 @@ To download and install the Universal Forwarder on the Windows VM:
 ## References
 - <a href="https://www.splunk.com/en_us/blog/learn/splunk-universal-forwarder.html">Splunk Universal Forwarder</a> 
 - <a href="https://docs.splunk.com/Documentation/Forwarder/9.4.0/Forwarder/InstallaWindowsuniversalforwarderfromaninstaller"> Install a Windows universal forwarder</a>
-
+- <a href="https://docs.splunk.com/Documentation/Forwarder/9.4.0/Forwarder/Startorstoptheuniversalforwarder"> Start or stop the universal forwarder</a>
+- <a href="https://docs.splunk.com/Documentation/Forwarder/9.4.0/Forwarder/Enableareceiver"> Enable a receiver for Splunk Enterprise</a>
 
   
