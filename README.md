@@ -106,24 +106,26 @@ To download and install the Universal Forwarder on the Windows VM:
 
 ### Configuring The Deployment Client
 
-On the Splunk web interface, when you go to "Settings", then to "Add Data", and when you choose "Forward" as the data source, the Universal Forwarder for the Windows VM does not show up on the list. This may be because the deployment server is not configured. 
+On the Splunk web interface, when you go to "Settings", then to "Add Data", and when you choose "Forward" as the data source, the Universal Forwarder for the Windows VM does not show up on the list. This may be because the deployment server is not configured. The deployment server needs to be specified on the host where the Universal Forwarder is installed so that the host itself can be classified as a deployment client. 
 
 To fix this issue:
 - On the Windows VM, go to Powershell and run it as administrator.
 - Change the directory to `C:\Program Files\SplunkUniversalForwarder\bin`.
-- The IP address of the deployment server is the Ubuntu VM because the Splunk Web server is running on that platform. The default management port is 8089. To connect the Universal Forwarder to the deployment server, run the following command:
+- The IP address of the deployment server is the Ubuntu VM because the Splunk Web server is running on that virtual machine. The default management port is 8089. To connect the Universal Forwarder to the deployment server, run the following command:
 
   `./splunk set deploy-poll <Ubuntu-VM-IP>:8089`
 - Once the configuration is set, restart the Universal Forwarder using the following command:
 
   `.\splunk restart`
-- On the Ubuntu VM, run the following command on the Terminal to verify that the Windows Universal Forwarder has now been set as the client:
+- On the Ubuntu VM, run the following command on the Terminal to verify that the Windows Universal Forwarder has now been set as the deployment client:
 
   `sudo /opt/splunk/bin/splunk list deploy-clients`
   ![image](https://github.com/user-attachments/assets/2dc91a04-5179-4738-ad6f-a4058e230b25)
-- As shown above, the Windows Universal Forwarder has been set as the deployment client.
+- As shown above, the Windows Universal Forwarder has now been set as the deployment client.
 - When you return to the Splunk Web to add the Windows Universal Forwarder as the data source, it now comes up on the list:
   ![image](https://github.com/user-attachments/assets/256fdae5-65e4-4c6d-bc6b-b618c79c4f60)
+
+
 
 
 
@@ -150,5 +152,6 @@ To fix this issue:
 - <a href="https://docs.splunk.com/Documentation/Forwarder/9.4.0/Forwarder/Startorstoptheuniversalforwarder"> Start or stop the universal forwarder</a>
 - <a href="https://docs.splunk.com/Documentation/Forwarder/9.4.0/Forwarder/Enableareceiver"> Enable a receiver for Splunk Enterprise</a>
 - <a href="https://docs.splunk.com/Documentation/Forwarder/9.4.0/Forwarder/Configuretheuniversalforwarder"> Configure the universal forwarder using configuration files</a>
+- <a href="https://docs.splunk.com/Documentation/Splunk/9.4.0/Updating/Configuredeploymentclients"> Configure deployment clients</a>
 
   
