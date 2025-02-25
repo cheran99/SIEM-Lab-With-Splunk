@@ -253,6 +253,7 @@ The next step is to attempt another brute-force login on the Windows VM. After e
 - <a href="https://youtu.be/yP_PFRy-pdA?si=8MUBPv_FlrtNuVg0"> Cybersecurity Detection Lab: Forwarding Windows Event Logs to Splunk Using Universal Forwarder</a>
 - <a href="https://www.manageengine.com/products/active-directory-audit/kb/windows-security-log-event-id-4625.html"> Windows Event ID 4625 – Failed logon</a>
 - <a href="https://docs.splunk.com/Documentation/Splunk/9.4.0/Alert/DefineRealTimeAlerts"> Create real-time alerts</a>
+- <a href="https://youtu.be/8jvEmAmQNug?si=tCZR3tHukvwUm7-N"> Creating Alerts in Splunk Enterprise</a>
 
 
   
