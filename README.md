@@ -173,7 +173,7 @@ The next step is to simulate brute-force login attempts. To do this:
 - Here are more details about each event:
   ![image](https://github.com/user-attachments/assets/4f892438-d91c-4f6f-a108-e0cb89a0021a)
 
-## Create Alerts
+## Creating Alerts
 
 On the Ubuntu VM:
 - Go to the Splunk Web server.
@@ -203,7 +203,7 @@ On the Ubuntu VM:
     ![image](https://github.com/user-attachments/assets/d9f990c7-07c0-49b5-a8ac-5e4fe0c4d08d)
 - Save the alert.
 
-## Trigger Alerts
+## Triggering Alerts
 
 The next step is to attempt another brute-force login on the Windows VM. After two failed attempts, an alert will trigger, and relevant recipients will receive an automated email.
 
