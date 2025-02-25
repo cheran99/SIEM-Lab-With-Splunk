@@ -106,7 +106,7 @@ To download and install the Universal Forwarder on the Windows VM:
 
 ### Configuring The Deployment Client
 
-On the Splunk web interface, when you go to "Settings", then to "Add Data", and when you choose "Forward" as the data source, the Universal Forwarder for the Windows VM does not show up on the list. This may be because the deployment server is not configured. The deployment server needs to be specified on the host where the Universal Forwarder is installed so that the host itself can be classified as a deployment client. 
+On the Splunk web interface, when you go to "Settings", then to "Add Data", and when you choose "Forward" as the data source, the Universal Forwarder for the Windows VM does not show up on the list. This may be because the deployment server is not configured. The deployment server needs to be specified on the host where the Universal Forwarder is installed so that the said host can be classified as a deployment client. 
 
 To fix this issue:
 - On the Windows VM, go to Powershell and run it as administrator.
@@ -127,6 +127,54 @@ To fix this issue:
 
 ### Collecting Windows Logs
 
+- Go to the Splunk Web in the Ubuntu VM.
+- Go to "Settings", then to "Indexes":
+
+  ![image](https://github.com/user-attachments/assets/99d4bfe7-275f-4529-8fe4-fa2c67fb775d)
+- On the "Indexes" page, click "New Index".
+- The index name should be "wineventlog":
+  ![image](https://github.com/user-attachments/assets/53784c6a-20d4-4e7a-b0dc-ca4ef0af84c1)
+- The rest of the configurations should remain as they are. Click "Save".
+- Next, go to "Settings", then to "Add Data", and then select "Forward" as the data source.
+- Select the Windows Universal Forwarder that was created earlier. Create a new server class name:
+  ![image](https://github.com/user-attachments/assets/e2ffffcb-37e2-4d78-9d4a-a7256e3f00f7)
+- On the "Select Source" page, choose "Local Event Logs" as the source, and then select "Application", "ForwardedEvents", "Security", and "System":
+  ![image](https://github.com/user-attachments/assets/d8c96405-0a18-459e-85a9-c8431e5d6aea)
+- On the "Input Settings" section, select "wineventlog" as the index:
+  ![image](https://github.com/user-attachments/assets/92db18ef-7388-42e8-9502-8debfb20250d)
+- Review the following before submitting it:
+  ![image](https://github.com/user-attachments/assets/fe56b789-3c6b-41f4-b714-4cfad47617e3)
+- The data for the local event logs from the Windows VM has been successfully added:
+  ![image](https://github.com/user-attachments/assets/8980ee27-90c9-41f1-b84b-08a617619c84)
+- You can now search for data, build dashboards etc.
+- When you search for Event Log data from the Windows VM, this is what comes up:
+  ![image](https://github.com/user-attachments/assets/d1a3a060-e266-4ad5-be07-6e2ae84d5b7f)
+- This shows that the Splunk Web server is listening to the Universal Forwarder on the Windows VM. 
+
+
+## Simulate Brute-Force Log In Attempts
+
+The next step is to simulate brute-force login attempts. To do this:
+- Log out of the Windows VM.
+- Log in using different random passwords until you use the right password.
+- On the Windows VM, go to Event Viewer, then to Windows logs > Security.
+- The Event ID for failed logons is 4625. In the Security event logs, click "Find" under the "Actions" tab. Type in "4625" to search for logs relating to Event ID 4625:
+  ![image](https://github.com/user-attachments/assets/6546cf27-fe9f-4fb5-90b3-baad9088c503)
+- Four failed login attempts were simulated therefore the Event Viewer has four Event ID 4625 logs shown:
+  ![image](https://github.com/user-attachments/assets/a6e5d6b9-7447-46f0-a24f-1ca420f6b50c)
+- When you click on each Event ID 4625 log for more details, the log describes that the account failed to log on, indicating that it was a failed login attempt:
+
+  ![image](https://github.com/user-attachments/assets/18fc587c-c787-4ca7-9713-0498873493af)
+- To verify if the Event ID 4625 logs appear on the Splunk Web server, go the search and type in the following query:
+
+  `index=* sourcetype=WinEventLog:Security EventCode=4625`
+- The search results on Splunk also show that there are four Event ID 4625 logs:
+  ![image](https://github.com/user-attachments/assets/3e0a7f1b-276a-40b2-939a-f22de7d72b19)
+
+
+
+
+  
 
 
 
@@ -157,5 +205,8 @@ To fix this issue:
 - <a href="https://docs.splunk.com/Documentation/Forwarder/9.4.0/Forwarder/Enableareceiver"> Enable a receiver for Splunk Enterprise</a>
 - <a href="https://docs.splunk.com/Documentation/Forwarder/9.4.0/Forwarder/Configuretheuniversalforwarder"> Configure the universal forwarder using configuration files</a>
 - <a href="https://docs.splunk.com/Documentation/Splunk/9.4.0/Updating/Configuredeploymentclients"> Configure deployment clients</a>
+- <a href="https://youtu.be/yP_PFRy-pdA?si=8MUBPv_FlrtNuVg0"> Cybersecurity Detection Lab: Forwarding Windows Event Logs to Splunk Using Universal Forwarder</a>
+- <a href="https://www.manageengine.com/products/active-directory-audit/kb/windows-security-log-event-id-4625.html"> Windows Event ID 4625 – Failed logon</a>
+
 
   
