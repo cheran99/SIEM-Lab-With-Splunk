@@ -125,6 +125,10 @@ To fix this issue:
 - When you return to the Splunk Web to add the Windows Universal Forwarder as the data source, it now comes up on the list:
   ![image](https://github.com/user-attachments/assets/256fdae5-65e4-4c6d-bc6b-b618c79c4f60)
 
+### Collecting Windows Logs
+
+
+
 
 
 
