@@ -170,6 +170,51 @@ The next step is to simulate brute-force login attempts. To do this:
   `index=* sourcetype=WinEventLog:Security EventCode=4625`
 - The search results on Splunk also show that there are four Event ID 4625 logs:
   ![image](https://github.com/user-attachments/assets/3e0a7f1b-276a-40b2-939a-f22de7d72b19)
+- Here are more details about each event:
+  ![image](https://github.com/user-attachments/assets/4f892438-d91c-4f6f-a108-e0cb89a0021a)
+
+## Create Alerts
+
+On the Ubuntu VM:
+- Go to the Splunk Web server.
+- Go to "Search & Reporting".
+- Type in the following query in the search bar and then click the search button:
+
+  `index=* sourcetype=WinEventLog:Security EventCode=4625`
+- On the top right corner, click "Save As" and then select "Alert":
+  ![image](https://github.com/user-attachments/assets/27911f5e-c86c-43b5-bdff-4730497cf2a6)
+- You will be asked to name this alert along with selecting the alert type, expiry, trigger conditions, and trigger actions:
+  ![image](https://github.com/user-attachments/assets/fe72a0b8-83ef-41ca-a727-2d57646b0066)
+- Add the following information to this Alert:
+  - Title: Brute Force Login Attempt
+  - Alert type: Real-time
+  - Expires: 24 hours
+  - Trigger alert when: Number of Results is greater than 2
+  - Trigger: Once
+  - Trigger Actions:
+    - Send email
+      - Priority: High
+      - Include:
+
+        ![image](https://github.com/user-attachments/assets/b630fc11-8def-4c30-acd6-1bf77c7e9651)
+    - Add to Triggered Alerts:
+      - Severity: High
+
+    ![image](https://github.com/user-attachments/assets/d9f990c7-07c0-49b5-a8ac-5e4fe0c4d08d)
+- Save the alert.
+
+## Trigger Alerts
+
+The next step is to attempt another brute-force login on the Windows VM. After two failed attempts, an alert will trigger, and relevant recipients will receive an automated email.
+
+
+
+
+
+
+
+  
+
 
 
 
@@ -207,6 +252,7 @@ The next step is to simulate brute-force login attempts. To do this:
 - <a href="https://docs.splunk.com/Documentation/Splunk/9.4.0/Updating/Configuredeploymentclients"> Configure deployment clients</a>
 - <a href="https://youtu.be/yP_PFRy-pdA?si=8MUBPv_FlrtNuVg0"> Cybersecurity Detection Lab: Forwarding Windows Event Logs to Splunk Using Universal Forwarder</a>
 - <a href="https://www.manageengine.com/products/active-directory-audit/kb/windows-security-log-event-id-4625.html"> Windows Event ID 4625 – Failed logon</a>
+- <a href="https://docs.splunk.com/Documentation/Splunk/9.4.0/Alert/DefineRealTimeAlerts"> Create real-time alerts</a>
 
 
   
