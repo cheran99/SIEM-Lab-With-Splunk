@@ -189,8 +189,7 @@ On the Ubuntu VM:
   - Title: Brute Force Login Attempt
   - Alert type: Real-time
   - Expires: 24 hours
-  - Trigger alert when: Number of Results is greater than 2
-  - Trigger: Once
+  - Trigger alert when: Per-Result
   - Trigger Actions:
     - Send email
       - Priority: High
@@ -200,12 +199,13 @@ On the Ubuntu VM:
     - Add to Triggered Alerts:
       - Severity: High
 
-    ![image](https://github.com/user-attachments/assets/d9f990c7-07c0-49b5-a8ac-5e4fe0c4d08d)
+    ![image](https://github.com/user-attachments/assets/c336b182-55c1-455a-bb19-86602a34a21e)
+
 - Save the alert.
 
 ## Triggering Alerts
 
-The next step is to attempt another brute-force login on the Windows VM. After two failed attempts, an alert will trigger, and relevant recipients will receive an automated email.
+The next step is to attempt another brute-force login on the Windows VM. After each attempt, an alert will trigger, and relevant recipients will receive an automated email.
 
 
 
