@@ -246,6 +246,31 @@ On the Splunk Web, when you go to "Activity", then to "Triggered Alerts", the re
 
 The triggered alerts also show the severity level for this specific alert. 
 
+## Building Basic Dashboards
+
+The next step is to create dashboards. To do this:
+- Go to "Search & Reporting" on the Splunk Web.
+- Go to the "Dashboards" section:
+
+  ![image](https://github.com/user-attachments/assets/c2595acb-7208-42c2-b3d9-0d5fc9158151)
+- Click "Create New Dashboard":
+- Add the following information:
+  - Dashboard Title: Brute Force Activity
+  - Classic Dashboard
+
+  ![image](https://github.com/user-attachments/assets/05a13ab8-ee38-476e-9d7c-6d3dc9feb1da)
+- Click "Create".
+- This will create a blank page for this specific dashboard:
+
+  ![image](https://github.com/user-attachments/assets/07ca6f1d-6d6e-45e3-b776-2d3e4fb82b50)
+- Click "Add Panel", then "New from Report", and select the alert that was created earlier:
+
+  ![image](https://github.com/user-attachments/assets/164d3a3b-dfbf-47e3-bae7-e7b4b31fa24d)
+- Click "Add to Dashboard" and save the dashboard.
+
+
+
+
 
 
 
