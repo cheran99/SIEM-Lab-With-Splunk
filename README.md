@@ -236,10 +236,12 @@ On the Ubuntu VM:
 ## Triggering Alerts
 
 The next step is to attempt more brute-force logins on the Windows VM. After each attempt, an alert will trigger, and relevant recipients will receive an automated email. After several failed attempts, Splunk sent an automated email to the relevant recipients:
+
 ![image](https://github.com/user-attachments/assets/9f8313e0-13e2-4c2d-8f6d-385a4949bdff)
 ![image](https://github.com/user-attachments/assets/660dd424-7ed4-4c03-8bd2-f42df9aa1298)
 
 On the Splunk Web, when you go to "Activity", then to "Triggered Alerts", the results show the number of times a failed login triggered an alert:
+
 ![image](https://github.com/user-attachments/assets/7b15c1a2-f221-499d-93cb-bec6397ddc30)
 
 The triggered alerts also show the severity level for this specific alert. 
