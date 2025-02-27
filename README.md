@@ -22,6 +22,7 @@
   - [Statistics Table](#statistics-table)
   - [Pie Chart](#pie-chart)
   - [Column Chart](#column-chart)
+- [References](#references)
 
 ## Introduction
 
