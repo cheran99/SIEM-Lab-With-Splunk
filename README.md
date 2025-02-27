@@ -372,6 +372,11 @@ In order to create a column chart that illustrates the timeline of successful an
   ![image](https://github.com/user-attachments/assets/2c19470c-ee27-4444-ba99-3e116a32c6bb)
 
 
+## Conclusion
+
+A SIEM lab using Splunk was successfully implemented to detect and analyse brute-force login activity from the Windows VM. The Universal Forwarder was installed and configured on the Windows VM thereby allowing logs from the said machine to be remotely sent to the Splunk server. 
+
+
 
 
 
