@@ -1,0 +1,60 @@
+<form version="1.1" theme="light">
+  <label>Brute Force Activity</label>
+  <fieldset submitButton="false">
+    <input type="time" token="field1">
+      <label></label>
+      <default>
+        <earliest>-24h@h</earliest>
+        <latest>now</latest>
+      </default>
+    </input>
+  </fieldset>
+  <row>
+    <panel>
+      <title>Table of Brute-Force Logins</title>
+      <table>
+        <title>Table of Brute-Force Logins</title>
+        <search>
+          <query>index=* sourcetype=WinEventLog:Security EventCode=4625
+| table _time, host, EventCode, Failure_Reason
+| sort -_time</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">none</option>
+      </table>
+    </panel>
+    <panel>
+      <title>Successful &amp; Unsuccessful Logins</title>
+      <chart>
+        <title>Successful &amp; Unsuccessful Logins</title>
+        <search>
+          <query>index=* sourcetype=WinEventLog:Security (EventCode=4625 OR EventCode=4624)
+      | eval Status=if(EventCode=4624, "Successful Logins", "Failed Logins")
+      | stats count by Status</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="charting.chart">pie</option>
+        <option name="charting.drilldown">none</option>
+      </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <title>Timeline of Successful &amp; Unsuccessful Logins</title>
+      <chart>
+        <title>Timeline of Successful &amp; Unsuccessful Logins</title>
+        <search>
+          <query>index=* sourcetype=WinEventLog:Security (EventCode=4625 OR EventCode=4624)
+       | eval Status=if(EventCode=4624, "Successful Login", "Failed Login")
+       | timechart span=1h count by Status</query>
+          <earliest>-4h@m</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="charting.chart">column</option>
+        <option name="charting.drilldown">none</option>
+      </chart>
+    </panel>
+  </row>
+</form>
