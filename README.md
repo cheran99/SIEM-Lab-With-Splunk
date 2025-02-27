@@ -4,6 +4,11 @@
 - [Introduction](#introduction)
   - [Objectives](#objectives)
 - [Tools Used](#tools-used)
+- [Prerequisites](#prerequisites)
+  - [System Requirements](#system-requirements)
+    - [Recommended Hardware](#recommended-hardware)
+    - [Recommended Virtual Machine Requirements](#recommended-virtual-machine-requirements)
+  - [Software Requirements](#software-requirements)
 - [Project Setup](#project-setup)
   - [Downloading and Installing Splunk Enterprise on Ubuntu VM](#downloading-and-installing-splunk-enterprise-on-ubuntu-vm)
   - [Downloading and Installing the Universal Forwarder](#downloading-and-installing-the-universal-forwarder)
@@ -34,10 +39,40 @@ Detection and response to suspicious activities, such as brute-force attacks, ar
 - Ubuntu VM (Splunk Server)
 - Windows 10 VM (Splunk Universal Forwarder)
 
+## Prerequisites
+
+### System Requirements
+
+#### Recommended Hardware
+- CPU: Minimum 4 cores (Intel i5/i7 or AMD Ryzen 5/7)
+- RAM: Minimum 16GB especially if you are running multiple virtual machines
+- Storage: Minimum 50GB free disk space
+- OS: Windows 10 or later/Ubuntu 20.04 or later/macOS 11 or later
+
+#### Recommended Virtual Machine Requirements
+
+- Ubuntu VM (Splunk Server)
+  - CPU: 2 cores
+  - Memory: 4GB RAM
+  - Storage: 25GB
+
+- Windows 10 VM (Splunk Universal Forwarder)
+  - CPU: 2 cores
+  - Memory: 4GB RAM
+  - Storage: 25GB
+
+### Software Requirements
+
+- Virtualisation Software:
+  - The platform to run the virtual machines can be one of the following:
+    - VirtualBox
+    - VMWare 
+- Splunk Enterprise (Free Trial or Paid Version)
+- Splunk Universal Forwarder 
+
+
+
 ## Project Setup
-
-### Prerequisites
-
 
 ### Downloading and Installing Splunk Enterprise on Ubuntu VM
 
