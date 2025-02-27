@@ -1,5 +1,23 @@
 # SIEM-Lab-With-Splunk
 
+## Table of Contents
+- [Introduction](#introduction)
+  - [Objectives](#objectives)
+- [Tools Used](#tools-used)
+- [Project Setup](#project-setup)
+  - [Downloading and Installing Splunk Enterprise on Ubuntu VM](#downloading-and-installing-splunk-enterprise-on-ubuntu-vm)
+  - [Downloading and Installing the Universal Forwarder](#downloading-and-installing-the-universal-forwarder)
+  - [Configuring The Receiver](#configuring-the-receiver)
+  - [Configuring The Deployment Client](#configuring-the-deployment-client)
+  - [Collecting Windows Logs](#collecting-windows-logs)
+- [Simulate Brute-Force Log In Attempts](#simulate-brute-force-log-in-attempts)
+- [Creating Alerts](#creating-alerts)
+- [Triggering Alerts](#triggering-alerts)
+- [Building Basic Dashboards](#building-basic-dashboards)
+  - [Statistics Table](#statistics-table)
+  - [Pie Chart](#pie-chart)
+  - [Column Chart](#column-chart)
+
 ## Introduction
 
 Detection and response to suspicious activities, such as brute-force attacks, are crucial to protecting the digital landscape. Because of this, an SIEM lab is essential to streamline threat detection and mitigate potential threats. This project highlights the setup of an SIEM lab using Splunk Enterprise.
