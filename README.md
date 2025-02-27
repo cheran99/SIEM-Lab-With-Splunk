@@ -242,7 +242,7 @@ The next step is to attempt more brute-force logins on the Windows VM. After eac
 
 On the Splunk Web, when you go to "Activity", then to "Triggered Alerts", the results show the number of times a failed login triggered an alert:
 
-![image](https://github.com/user-attachments/assets/7b15c1a2-f221-499d-93cb-bec6397ddc30)
+![image](https://github.com/user-attachments/assets/9e71ead0-1553-4968-b1a9-6fe075dfaff6)
 
 The triggered alerts also show the severity level for this specific alert. 
 
@@ -263,10 +263,62 @@ The next step is to create dashboards. To do this:
 - This will create a blank page for this specific dashboard:
 
   ![image](https://github.com/user-attachments/assets/07ca6f1d-6d6e-45e3-b776-2d3e4fb82b50)
-- Click "Add Panel", then "New from Report", and select the alert that was created earlier:
 
-  ![image](https://github.com/user-attachments/assets/164d3a3b-dfbf-47e3-bae7-e7b4b31fa24d)
-- Click "Add to Dashboard" and save the dashboard.
+### Statistics Table
+
+To create a statistics table that shows brute-force login activities in the "Brute Force Activity" dashboard:
+- Click "Add Panel", then "New", and then "Statistics Table":
+  - Add the following information:
+    - Content Title: Table of Brute-Force Logins
+    - Search String:
+      ```
+      index=* sourcetype=WinEventLog:Security EventCode=4625
+      | table _time, host, EventCode, Failure_Reason
+      | sort -_time
+      ```
+    - Click "Add to Dashboard".
+- This is what the dashboard looks like for the table of brute-force logins:
+
+  ![image](https://github.com/user-attachments/assets/df1b319b-2ea1-4d5e-827b-5866b059b4ea)
+
+### Pie Chart
+
+To create a pie chart that shows successful and unsuccessful logins:
+- Click "Add Panel", then "New", and then "Pie Chart":
+  - Add the following information:
+    - Content Title: Successful & Unsuccessful Logins
+    - Search String:
+      ```
+      index=* sourcetype=WinEventLog:Security (EventCode=4625 OR EventCode=4624)
+      | eval Status=if(EventCode=4624, "Successful Login", "Failed Login")
+      | stats count by Status
+      ```
+    - Click "Add to Dashboard".
+- Here is the pie chart for successful and unsuccessful logins:
+
+  ![image](https://github.com/user-attachments/assets/41720e7c-1d1a-4929-a6ae-eb58f8514404)
+
+### Column Chart
+
+In order to create a column chart that illustrates the timeline of successful and unsuccessful logins:
+- Click "Add Panel", then "New", and then "Column Chart":
+  - Add the following information:
+    - Content Title: Timeline of Successful & Unsuccessful Logins
+    - Search String:
+       ```
+       index=* sourcetype=WinEventLog:Security (EventCode=4625 OR EventCode=4624)
+       | eval Status=if(EventCode=4624, "Successful Login", "Failed Login")
+       | timechart span=1h count by Status
+    - Click "Add to Dashboard".
+- Here is the column chart that shows the timeline of successful and failed logins:
+
+  ![image](https://github.com/user-attachments/assets/2c19470c-ee27-4444-ba99-3e116a32c6bb)
+
+
+
+
+
+
 
 
 
@@ -318,6 +370,15 @@ The next step is to create dashboards. To do this:
 - <a href="https://www.manageengine.com/products/active-directory-audit/kb/windows-security-log-event-id-4625.html"> Windows Event ID 4625 – Failed logon</a>
 - <a href="https://docs.splunk.com/Documentation/Splunk/9.4.0/Alert/DefineRealTimeAlerts"> Create real-time alerts</a>
 - <a href="https://youtu.be/8jvEmAmQNug?si=tCZR3tHukvwUm7-N"> Creating Alerts in Splunk Enterprise</a>
+- <a href="https://youtu.be/tkSZws7vBEo?si=1ZHbG-NZ1V-7gzfo"> How to create Splunk Dashboard | Cybersecurity</a>
+- <a href="https://docs.splunk.com/Documentation/Splunk/9.4.0/SearchTutorial/Startsearching"> Basic searches and search results</a>
+- <a href="https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4624"> 4624(S): An account was successfully logged on.</a>
+- <a href="https://kinneygroup.com/blog/splunk-search-command-of-the-week-stats/"> Using the stats Command</a>
+- <a href="https://docs.splunk.com/Documentation/SCS/current/SearchReference/EvalCommandOverview"> SPL2 Search Reference: eval command overview</a>
+- <a href="https://docs.splunk.com/Documentation/Splunk/9.4.0/Viz/PieChart"> Dashboards and Visualizations: Pie chart</a>
+- <a href="https://docs.splunk.com/Documentation/Splunk/9.4.0/DashStudio/chartsPie"> Splunk Dashboard Studio: Pie charts</a>
+- <a href="https://docs.splunk.com/Documentation/Splunk/9.4.0/DashStudio/chartsBar"> Splunk Dashboard Studio: Bar and column charts</a>
+- <a href="https://docs.splunk.com/Documentation/SCS/current/SearchReference/TimechartCommandExamples"> SPL2 Search Reference: timechart command examples</a>
 
 
   
