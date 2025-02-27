@@ -1,0 +1,2826 @@
+"Account_Domain","Account_Name","Authentication_Package","Caller_Process_ID","Caller_Process_Name",ComputerName,"Elevated_Token",EventCode,EventType,"Failure_Reason","Impersonation_Level","Key_Length",Keywords,"Linked_Logon_ID",LogName,"Logon_GUID","Logon_ID","Logon_Process","Logon_Type",Message,Name,"Network_Account_Domain","Network_Account_Name","New_Time",OpCode,"Package_Name__NTLM_only_","Previous_Time",Privileges,"Process_ID","Process_Name","Read_Operation",RecordNumber,"Restricted_Admin_Mode","Security_ID",SourceName,"Source_Network_Address","Source_Port",Status,"Sub_Status",TaskCategory,"Transited_Services",Type,"Virtual_Account","Workstation_Name","_raw","_time",eventtype,host,index,linecount,punct,source,sourcetype,"splunk_server","splunk_server_group"
+"WORKGROUP
+-","DESKTOP-FKE02UP$
+-",Negotiate,0x5fc,"C:\Windows\System32\svchost.exe","DESKTOP-FKE02UP",,4625,0,"An Error occured during Logon.",,0,"Audit Failure",,Security,,0x3E7,User32,2,"An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5fc
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",,,,,Info,"-",,,,,,53832,,"S-1-5-18
+S-1-0-0","Microsoft Windows security auditing.","127.0.0.1",0,0xC000006D,0xC0000380,Logon,"-",Information,,"-","02/27/2025 01:51:16 PM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=DESKTOP-FKE02UP
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=53832
+Keywords=Audit Failure
+TaskCategory=Logon
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5fc
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","2025-02-27T13:51:16.000+0000",,"DESKTOP-FKE02UP",wineventlog,61,"//_::_====-=___.===_===_____.\r\r:\rt_:tt---\rt_:tt-$\r","WinEventLog:Security","WinEventLog:Security","ubuntu-1-VirtualBox",
+"WORKGROUP
+-","DESKTOP-FKE02UP$
+-",Negotiate,0x5fc,"C:\Windows\System32\svchost.exe","DESKTOP-FKE02UP",,4625,0,"An Error occured during Logon.",,0,"Audit Failure",,Security,,0x3E7,User32,2,"An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5fc
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",,,,,Info,"-",,,,,,53829,,"S-1-5-18
+S-1-0-0","Microsoft Windows security auditing.","127.0.0.1",0,0xC000006D,0xC0000380,Logon,"-",Information,,"-","02/27/2025 01:51:09 PM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=DESKTOP-FKE02UP
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=53829
+Keywords=Audit Failure
+TaskCategory=Logon
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5fc
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","2025-02-27T13:51:09.000+0000",,"DESKTOP-FKE02UP",wineventlog,61,"//_::_====-=___.===_===_____.\r\r:\rt_:tt---\rt_:tt-$\r","WinEventLog:Security","WinEventLog:Security","ubuntu-1-VirtualBox",
+"WORKGROUP
+-","DESKTOP-FKE02UP$
+-",Negotiate,0x5fc,"C:\Windows\System32\svchost.exe","DESKTOP-FKE02UP",,4625,0,"An Error occured during Logon.",,0,"Audit Failure",,Security,,0x3E7,User32,2,"An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5fc
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",,,,,Info,"-",,,,,,53826,,"S-1-5-18
+S-1-0-0","Microsoft Windows security auditing.","127.0.0.1",0,0xC000006D,0xC0000380,Logon,"-",Information,,"-","02/27/2025 01:51:07 PM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=DESKTOP-FKE02UP
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=53826
+Keywords=Audit Failure
+TaskCategory=Logon
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5fc
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","2025-02-27T13:51:07.000+0000",,"DESKTOP-FKE02UP",wineventlog,61,"//_::_====-=___.===_===_____.\r\r:\rt_:tt---\rt_:tt-$\r","WinEventLog:Security","WinEventLog:Security","ubuntu-1-VirtualBox",
+"WORKGROUP
+-","DESKTOP-FKE02UP$
+-",Negotiate,0x5fc,"C:\Windows\System32\svchost.exe","DESKTOP-FKE02UP",,4625,0,"An Error occured during Logon.",,0,"Audit Failure",,Security,,0x3E7,User32,2,"An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5fc
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",,,,,Info,"-",,,,,,53823,,"S-1-5-18
+S-1-0-0","Microsoft Windows security auditing.","127.0.0.1",0,0xC000006D,0xC0000380,Logon,"-",Information,,"-","02/27/2025 01:51:05 PM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=DESKTOP-FKE02UP
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=53823
+Keywords=Audit Failure
+TaskCategory=Logon
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5fc
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","2025-02-27T13:51:05.000+0000",,"DESKTOP-FKE02UP",wineventlog,61,"//_::_====-=___.===_===_____.\r\r:\rt_:tt---\rt_:tt-$\r","WinEventLog:Security","WinEventLog:Security","ubuntu-1-VirtualBox",
+"WORKGROUP
+-","DESKTOP-FKE02UP$
+-",Negotiate,0x5fc,"C:\Windows\System32\svchost.exe","DESKTOP-FKE02UP",,4625,0,"An Error occured during Logon.",,0,"Audit Failure",,Security,,0x3E7,User32,2,"An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5fc
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",,,,,Info,"-",,,,,,53820,,"S-1-5-18
+S-1-0-0","Microsoft Windows security auditing.","127.0.0.1",0,0xC000006D,0xC0000380,Logon,"-",Information,,"-","02/27/2025 01:51:04 PM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=DESKTOP-FKE02UP
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=53820
+Keywords=Audit Failure
+TaskCategory=Logon
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5fc
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","2025-02-27T13:51:04.000+0000",,"DESKTOP-FKE02UP",wineventlog,61,"//_::_====-=___.===_===_____.\r\r:\rt_:tt---\rt_:tt-$\r","WinEventLog:Security","WinEventLog:Security","ubuntu-1-VirtualBox",
+"WORKGROUP
+-","DESKTOP-FKE02UP$
+-",Negotiate,0x5d8,"C:\Windows\System32\svchost.exe","DESKTOP-FKE02UP",,4625,0,"An Error occured during Logon.",,0,"Audit Failure",,Security,,0x3E7,User32,2,"An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5d8
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",,,,,Info,"-",,,,,,54747,,"S-1-5-18
+S-1-0-0","Microsoft Windows security auditing.","127.0.0.1",0,0xC000006D,0xC0000380,Logon,"-",Information,,"-","02/27/2025 01:37:43 PM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=DESKTOP-FKE02UP
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=54747
+Keywords=Audit Failure
+TaskCategory=Logon
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5d8
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","2025-02-27T13:37:43.000+0000",,"DESKTOP-FKE02UP",wineventlog,61,"//_::_====-=___.===_===_____.\r\r:\rt_:tt---\rt_:tt-$\r","WinEventLog:Security","WinEventLog:Security","ubuntu-1-VirtualBox",
+"WORKGROUP
+-","DESKTOP-FKE02UP$
+-",Negotiate,0x5d8,"C:\Windows\System32\svchost.exe","DESKTOP-FKE02UP",,4625,0,"An Error occured during Logon.",,0,"Audit Failure",,Security,,0x3E7,User32,2,"An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5d8
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",,,,,Info,"-",,,,,,54739,,"S-1-5-18
+S-1-0-0","Microsoft Windows security auditing.","127.0.0.1",0,0xC000006D,0xC0000380,Logon,"-",Information,,"-","02/27/2025 01:37:36 PM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=DESKTOP-FKE02UP
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=54739
+Keywords=Audit Failure
+TaskCategory=Logon
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5d8
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","2025-02-27T13:37:36.000+0000",,"DESKTOP-FKE02UP",wineventlog,61,"//_::_====-=___.===_===_____.\r\r:\rt_:tt---\rt_:tt-$\r","WinEventLog:Security","WinEventLog:Security","ubuntu-1-VirtualBox",
+"WORKGROUP
+-","DESKTOP-FKE02UP$
+-",Negotiate,0x5d8,"C:\Windows\System32\svchost.exe","DESKTOP-FKE02UP",,4625,0,"An Error occured during Logon.",,0,"Audit Failure",,Security,,0x3E7,User32,2,"An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5d8
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",,,,,Info,"-",,,,,,54734,,"S-1-5-18
+S-1-0-0","Microsoft Windows security auditing.","127.0.0.1",0,0xC000006D,0xC0000380,Logon,"-",Information,,"-","02/27/2025 01:37:32 PM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=DESKTOP-FKE02UP
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=54734
+Keywords=Audit Failure
+TaskCategory=Logon
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5d8
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","2025-02-27T13:37:32.000+0000",,"DESKTOP-FKE02UP",wineventlog,61,"//_::_====-=___.===_===_____.\r\r:\rt_:tt---\rt_:tt-$\r","WinEventLog:Security","WinEventLog:Security","ubuntu-1-VirtualBox",
+"WORKGROUP
+-","DESKTOP-FKE02UP$
+-",Negotiate,0x5d8,"C:\Windows\System32\svchost.exe","DESKTOP-FKE02UP",,4625,0,"An Error occured during Logon.",,0,"Audit Failure",,Security,,0x3E7,User32,2,"An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5d8
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",,,,,Info,"-",,,,,,54731,,"S-1-5-18
+S-1-0-0","Microsoft Windows security auditing.","127.0.0.1",0,0xC000006D,0xC0000380,Logon,"-",Information,,"-","02/27/2025 01:37:28 PM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=DESKTOP-FKE02UP
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=54731
+Keywords=Audit Failure
+TaskCategory=Logon
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5d8
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","2025-02-27T13:37:28.000+0000",,"DESKTOP-FKE02UP",wineventlog,61,"//_::_====-=___.===_===_____.\r\r:\rt_:tt---\rt_:tt-$\r","WinEventLog:Security","WinEventLog:Security","ubuntu-1-VirtualBox",
+"WORKGROUP
+-","DESKTOP-FKE02UP$
+-",Negotiate,0x5d8,"C:\Windows\System32\svchost.exe","DESKTOP-FKE02UP",,4625,0,"An Error occured during Logon.",,0,"Audit Failure",,Security,,0x3E7,User32,2,"An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5d8
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",,,,,Info,"-",,,,,,54691,,"S-1-5-18
+S-1-0-0","Microsoft Windows security auditing.","127.0.0.1",0,0xC000006D,0xC0000380,Logon,"-",Information,,"-","02/27/2025 01:36:51 PM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=DESKTOP-FKE02UP
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=54691
+Keywords=Audit Failure
+TaskCategory=Logon
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5d8
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","2025-02-27T13:36:51.000+0000",,"DESKTOP-FKE02UP",wineventlog,61,"//_::_====-=___.===_===_____.\r\r:\rt_:tt---\rt_:tt-$\r","WinEventLog:Security","WinEventLog:Security","ubuntu-1-VirtualBox",
+"WORKGROUP
+-","DESKTOP-FKE02UP$
+-",Negotiate,0x5d8,"C:\Windows\System32\svchost.exe","DESKTOP-FKE02UP",,4625,0,"An Error occured during Logon.",,0,"Audit Failure",,Security,,0x3E7,User32,2,"An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5d8
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",,,,,Info,"-",,,,,,54688,,"S-1-5-18
+S-1-0-0","Microsoft Windows security auditing.","127.0.0.1",0,0xC000006D,0xC0000380,Logon,"-",Information,,"-","02/27/2025 01:36:49 PM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=DESKTOP-FKE02UP
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=54688
+Keywords=Audit Failure
+TaskCategory=Logon
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5d8
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","2025-02-27T13:36:49.000+0000",,"DESKTOP-FKE02UP",wineventlog,61,"//_::_====-=___.===_===_____.\r\r:\rt_:tt---\rt_:tt-$\r","WinEventLog:Security","WinEventLog:Security","ubuntu-1-VirtualBox",
+"WORKGROUP
+-","DESKTOP-FKE02UP$
+-",Negotiate,0x5d8,"C:\Windows\System32\svchost.exe","DESKTOP-FKE02UP",,4625,0,"An Error occured during Logon.",,0,"Audit Failure",,Security,,0x3E7,User32,2,"An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5d8
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",,,,,Info,"-",,,,,,54685,,"S-1-5-18
+S-1-0-0","Microsoft Windows security auditing.","127.0.0.1",0,0xC000006D,0xC0000380,Logon,"-",Information,,"-","02/27/2025 01:36:46 PM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=DESKTOP-FKE02UP
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=54685
+Keywords=Audit Failure
+TaskCategory=Logon
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5d8
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","2025-02-27T13:36:46.000+0000",,"DESKTOP-FKE02UP",wineventlog,61,"//_::_====-=___.===_===_____.\r\r:\rt_:tt---\rt_:tt-$\r","WinEventLog:Security","WinEventLog:Security","ubuntu-1-VirtualBox",
+"WORKGROUP
+-","DESKTOP-FKE02UP$
+-",Negotiate,0x5d8,"C:\Windows\System32\svchost.exe","DESKTOP-FKE02UP",,4625,0,"An Error occured during Logon.",,0,"Audit Failure",,Security,,0x3E7,User32,2,"An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5d8
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",,,,,Info,"-",,,,,,54682,,"S-1-5-18
+S-1-0-0","Microsoft Windows security auditing.","127.0.0.1",0,0xC000006D,0xC0000380,Logon,"-",Information,,"-","02/27/2025 01:36:44 PM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=DESKTOP-FKE02UP
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=54682
+Keywords=Audit Failure
+TaskCategory=Logon
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5d8
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","2025-02-27T13:36:44.000+0000",,"DESKTOP-FKE02UP",wineventlog,61,"//_::_====-=___.===_===_____.\r\r:\rt_:tt---\rt_:tt-$\r","WinEventLog:Security","WinEventLog:Security","ubuntu-1-VirtualBox",
+"WORKGROUP
+-","DESKTOP-FKE02UP$
+-",Negotiate,0x5d8,"C:\Windows\System32\svchost.exe","DESKTOP-FKE02UP",,4625,0,"An Error occured during Logon.",,0,"Audit Failure",,Security,,0x3E7,User32,2,"An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5d8
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",,,,,Info,"-",,,,,,54595,,"S-1-5-18
+S-1-0-0","Microsoft Windows security auditing.","127.0.0.1",0,0xC000006D,0xC0000380,Logon,"-",Information,,"-","02/27/2025 01:36:19 PM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=DESKTOP-FKE02UP
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=54595
+Keywords=Audit Failure
+TaskCategory=Logon
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5d8
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","2025-02-27T13:36:19.000+0000",,"DESKTOP-FKE02UP",wineventlog,61,"//_::_====-=___.===_===_____.\r\r:\rt_:tt---\rt_:tt-$\r","WinEventLog:Security","WinEventLog:Security","ubuntu-1-VirtualBox",
+"WORKGROUP
+-","DESKTOP-FKE02UP$
+-",Negotiate,0x5d8,"C:\Windows\System32\svchost.exe","DESKTOP-FKE02UP",,4625,0,"An Error occured during Logon.",,0,"Audit Failure",,Security,,0x3E7,User32,2,"An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5d8
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",,,,,Info,"-",,,,,,54592,,"S-1-5-18
+S-1-0-0","Microsoft Windows security auditing.","127.0.0.1",0,0xC000006D,0xC0000380,Logon,"-",Information,,"-","02/27/2025 01:36:15 PM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=DESKTOP-FKE02UP
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=54592
+Keywords=Audit Failure
+TaskCategory=Logon
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5d8
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","2025-02-27T13:36:15.000+0000",,"DESKTOP-FKE02UP",wineventlog,61,"//_::_====-=___.===_===_____.\r\r:\rt_:tt---\rt_:tt-$\r","WinEventLog:Security","WinEventLog:Security","ubuntu-1-VirtualBox",
+"WORKGROUP
+-","DESKTOP-FKE02UP$
+-",Negotiate,0x5d8,"C:\Windows\System32\svchost.exe","DESKTOP-FKE02UP",,4625,0,"An Error occured during Logon.",,0,"Audit Failure",,Security,,0x3E7,User32,2,"An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5d8
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",,,,,Info,"-",,,,,,54587,,"S-1-5-18
+S-1-0-0","Microsoft Windows security auditing.","127.0.0.1",0,0xC000006D,0xC0000380,Logon,"-",Information,,"-","02/27/2025 01:36:13 PM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=DESKTOP-FKE02UP
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=54587
+Keywords=Audit Failure
+TaskCategory=Logon
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5d8
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","2025-02-27T13:36:13.000+0000",,"DESKTOP-FKE02UP",wineventlog,61,"//_::_====-=___.===_===_____.\r\r:\rt_:tt---\rt_:tt-$\r","WinEventLog:Security","WinEventLog:Security","ubuntu-1-VirtualBox",
+"WORKGROUP
+-","DESKTOP-FKE02UP$
+-",Negotiate,0x5d8,"C:\Windows\System32\svchost.exe","DESKTOP-FKE02UP",,4625,0,"An Error occured during Logon.",,0,"Audit Failure",,Security,,0x3E7,User32,2,"An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5d8
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",,,,,Info,"-",,,,,,54584,,"S-1-5-18
+S-1-0-0","Microsoft Windows security auditing.","127.0.0.1",0,0xC000006D,0xC0000380,Logon,"-",Information,,"-","02/27/2025 01:36:10 PM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=DESKTOP-FKE02UP
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=54584
+Keywords=Audit Failure
+TaskCategory=Logon
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5d8
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","2025-02-27T13:36:10.000+0000",,"DESKTOP-FKE02UP",wineventlog,61,"//_::_====-=___.===_===_____.\r\r:\rt_:tt---\rt_:tt-$\r","WinEventLog:Security","WinEventLog:Security","ubuntu-1-VirtualBox",
+"WORKGROUP
+-","DESKTOP-FKE02UP$
+-",Negotiate,0x5fc,"C:\Windows\System32\svchost.exe","DESKTOP-FKE02UP",,4625,0,"An Error occured during Logon.",,0,"Audit Failure",,Security,,0x3E7,User32,2,"An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5fc
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",,,,,Info,"-",,,,,,53252,,"S-1-5-18
+S-1-0-0","Microsoft Windows security auditing.","127.0.0.1",0,0xC000006D,0xC0000380,Logon,"-",Information,,"-","02/27/2025 12:18:27 PM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=DESKTOP-FKE02UP
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=53252
+Keywords=Audit Failure
+TaskCategory=Logon
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5fc
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","2025-02-27T12:18:27.000+0000",,"DESKTOP-FKE02UP",wineventlog,61,"//_::_====-=___.===_===_____.\r\r:\rt_:tt---\rt_:tt-$\r","WinEventLog:Security","WinEventLog:Security","ubuntu-1-VirtualBox",
+"WORKGROUP
+-","DESKTOP-FKE02UP$
+-",Negotiate,0x5fc,"C:\Windows\System32\svchost.exe","DESKTOP-FKE02UP",,4625,0,"An Error occured during Logon.",,0,"Audit Failure",,Security,,0x3E7,User32,2,"An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5fc
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",,,,,Info,"-",,,,,,53249,,"S-1-5-18
+S-1-0-0","Microsoft Windows security auditing.","127.0.0.1",0,0xC000006D,0xC0000380,Logon,"-",Information,,"-","02/27/2025 12:18:26 PM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=DESKTOP-FKE02UP
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=53249
+Keywords=Audit Failure
+TaskCategory=Logon
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5fc
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","2025-02-27T12:18:26.000+0000",,"DESKTOP-FKE02UP",wineventlog,61,"//_::_====-=___.===_===_____.\r\r:\rt_:tt---\rt_:tt-$\r","WinEventLog:Security","WinEventLog:Security","ubuntu-1-VirtualBox",
+"WORKGROUP
+-","DESKTOP-FKE02UP$
+-",Negotiate,0x5fc,"C:\Windows\System32\svchost.exe","DESKTOP-FKE02UP",,4625,0,"An Error occured during Logon.",,0,"Audit Failure",,Security,,0x3E7,User32,2,"An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5fc
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",,,,,Info,"-",,,,,,53246,,"S-1-5-18
+S-1-0-0","Microsoft Windows security auditing.","127.0.0.1",0,0xC000006D,0xC0000380,Logon,"-",Information,,"-","02/27/2025 12:18:26 PM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=DESKTOP-FKE02UP
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=53246
+Keywords=Audit Failure
+TaskCategory=Logon
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5fc
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","2025-02-27T12:18:26.000+0000",,"DESKTOP-FKE02UP",wineventlog,61,"//_::_====-=___.===_===_____.\r\r:\rt_:tt---\rt_:tt-$\r","WinEventLog:Security","WinEventLog:Security","ubuntu-1-VirtualBox",
+"WORKGROUP
+-","DESKTOP-FKE02UP$
+-",Negotiate,0x5fc,"C:\Windows\System32\svchost.exe","DESKTOP-FKE02UP",,4625,0,"An Error occured during Logon.",,0,"Audit Failure",,Security,,0x3E7,User32,2,"An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5fc
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",,,,,Info,"-",,,,,,53243,,"S-1-5-18
+S-1-0-0","Microsoft Windows security auditing.","127.0.0.1",0,0xC000006D,0xC0000380,Logon,"-",Information,,"-","02/27/2025 12:18:25 PM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=DESKTOP-FKE02UP
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=53243
+Keywords=Audit Failure
+TaskCategory=Logon
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5fc
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","2025-02-27T12:18:25.000+0000",,"DESKTOP-FKE02UP",wineventlog,61,"//_::_====-=___.===_===_____.\r\r:\rt_:tt---\rt_:tt-$\r","WinEventLog:Security","WinEventLog:Security","ubuntu-1-VirtualBox",
+"WORKGROUP
+-","DESKTOP-FKE02UP$
+-",Negotiate,0x5fc,"C:\Windows\System32\svchost.exe","DESKTOP-FKE02UP",,4625,0,"An Error occured during Logon.",,0,"Audit Failure",,Security,,0x3E7,User32,2,"An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5fc
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",,,,,Info,"-",,,,,,53211,,"S-1-5-18
+S-1-0-0","Microsoft Windows security auditing.","127.0.0.1",0,0xC000006D,0xC0000380,Logon,"-",Information,,"-","02/27/2025 12:18:14 PM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=DESKTOP-FKE02UP
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=53211
+Keywords=Audit Failure
+TaskCategory=Logon
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5fc
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","2025-02-27T12:18:14.000+0000",,"DESKTOP-FKE02UP",wineventlog,61,"//_::_====-=___.===_===_____.\r\r:\rt_:tt---\rt_:tt-$\r","WinEventLog:Security","WinEventLog:Security","ubuntu-1-VirtualBox",
+"WORKGROUP
+-","DESKTOP-FKE02UP$
+-",Negotiate,0x5fc,"C:\Windows\System32\svchost.exe","DESKTOP-FKE02UP",,4625,0,"An Error occured during Logon.",,0,"Audit Failure",,Security,,0x3E7,User32,2,"An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5fc
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",,,,,Info,"-",,,,,,53208,,"S-1-5-18
+S-1-0-0","Microsoft Windows security auditing.","127.0.0.1",0,0xC000006D,0xC0000380,Logon,"-",Information,,"-","02/27/2025 12:18:14 PM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=DESKTOP-FKE02UP
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=53208
+Keywords=Audit Failure
+TaskCategory=Logon
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5fc
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","2025-02-27T12:18:14.000+0000",,"DESKTOP-FKE02UP",wineventlog,61,"//_::_====-=___.===_===_____.\r\r:\rt_:tt---\rt_:tt-$\r","WinEventLog:Security","WinEventLog:Security","ubuntu-1-VirtualBox",
+"WORKGROUP
+-","DESKTOP-FKE02UP$
+-",Negotiate,0x5fc,"C:\Windows\System32\svchost.exe","DESKTOP-FKE02UP",,4625,0,"An Error occured during Logon.",,0,"Audit Failure",,Security,,0x3E7,User32,2,"An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5fc
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",,,,,Info,"-",,,,,,53205,,"S-1-5-18
+S-1-0-0","Microsoft Windows security auditing.","127.0.0.1",0,0xC000006D,0xC0000380,Logon,"-",Information,,"-","02/27/2025 12:18:13 PM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=DESKTOP-FKE02UP
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=53205
+Keywords=Audit Failure
+TaskCategory=Logon
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5fc
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","2025-02-27T12:18:13.000+0000",,"DESKTOP-FKE02UP",wineventlog,61,"//_::_====-=___.===_===_____.\r\r:\rt_:tt---\rt_:tt-$\r","WinEventLog:Security","WinEventLog:Security","ubuntu-1-VirtualBox",
+"WORKGROUP
+-","DESKTOP-FKE02UP$
+-",Negotiate,0x5fc,"C:\Windows\System32\svchost.exe","DESKTOP-FKE02UP",,4625,0,"An Error occured during Logon.",,0,"Audit Failure",,Security,,0x3E7,User32,2,"An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5fc
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.",,,,,Info,"-",,,,,,53202,,"S-1-5-18
+S-1-0-0","Microsoft Windows security auditing.","127.0.0.1",0,0xC000006D,0xC0000380,Logon,"-",Information,,"-","02/27/2025 12:18:12 PM
+LogName=Security
+EventCode=4625
+EventType=0
+ComputerName=DESKTOP-FKE02UP
+SourceName=Microsoft Windows security auditing.
+Type=Information
+RecordNumber=53202
+Keywords=Audit Failure
+TaskCategory=Logon
+OpCode=Info
+Message=An account failed to log on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		DESKTOP-FKE02UP$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3E7
+
+Logon Type:			2
+
+Account For Which Logon Failed:
+	Security ID:		S-1-0-0
+	Account Name:		-
+	Account Domain:		-
+
+Failure Information:
+	Failure Reason:		An Error occured during Logon.
+	Status:			0xC000006D
+	Sub Status:		0xC0000380
+
+Process Information:
+	Caller Process ID:	0x5fc
+	Caller Process Name:	C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted.
+
+The Subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The Logon Type field indicates the kind of logon that was requested. The most common types are 2 (interactive) and 3 (network).
+
+The Process Information fields indicate which account and process on the system requested the logon.
+
+The Network Information fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","2025-02-27T12:18:12.000+0000",,"DESKTOP-FKE02UP",wineventlog,61,"//_::_====-=___.===_===_____.\r\r:\rt_:tt---\rt_:tt-$\r","WinEventLog:Security","WinEventLog:Security","ubuntu-1-VirtualBox",
