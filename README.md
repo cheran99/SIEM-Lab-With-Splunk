@@ -36,6 +36,9 @@ Detection and response to suspicious activities, such as brute-force attacks, ar
 
 ## Project Setup
 
+### Prerequisites
+
+
 ### Downloading and Installing Splunk Enterprise on Ubuntu VM
 
 To download and install Splunk Enterprise:
