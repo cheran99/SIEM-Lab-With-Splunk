@@ -1,0 +1,84 @@
+{
+	"form": {
+		"label": "Brute Force Activity",
+		"fieldset": {
+			"input": {
+				"label": "",
+				"default": {
+					"earliest": "-24h@h",
+					"latest": "now"
+				},
+				"_type": "time",
+				"_token": "field1"
+			},
+			"_submitButton": "false"
+		},
+		"row": [
+			{
+				"panel": [
+					{
+						"title": "Table of Brute-Force Logins",
+						"table": {
+							"title": "Table of Brute-Force Logins",
+							"search": {
+								"query": "index=* sourcetype=WinEventLog:Security EventCode=4625\n| table _time, host, EventCode, Failure_Reason\n| sort -_time",
+								"earliest": "-24h@h",
+								"latest": "now"
+							},
+							"option": {
+								"_name": "drilldown",
+								"__text": "none"
+							}
+						}
+					},
+					{
+						"title": "Successful & Unsuccessful Logins",
+						"chart": {
+							"title": "Successful & Unsuccessful Logins",
+							"search": {
+								"query": "index=* sourcetype=WinEventLog:Security (EventCode=4625 OR EventCode=4624)\n      | eval Status=if(EventCode=4624, \"Successful Logins\", \"Failed Logins\")\n      | stats count by Status",
+								"earliest": "-24h@h",
+								"latest": "now"
+							},
+							"option": [
+								{
+									"_name": "charting.chart",
+									"__text": "pie"
+								},
+								{
+									"_name": "charting.drilldown",
+									"__text": "none"
+								}
+							]
+						}
+					}
+				]
+			},
+			{
+				"panel": {
+					"title": "Timeline of Successful & Unsuccessful Logins",
+					"chart": {
+						"title": "Timeline of Successful & Unsuccessful Logins",
+						"search": {
+							"query": "index=* sourcetype=WinEventLog:Security (EventCode=4625 OR EventCode=4624)\n       | eval Status=if(EventCode=4624, \"Successful Login\", \"Failed Login\")\n       | timechart span=1h count by Status",
+							"earliest": "-4h@m",
+							"latest": "now"
+						},
+						"option": [
+							{
+								"_name": "charting.chart",
+								"__text": "column"
+							},
+							{
+								"_name": "charting.drilldown",
+								"__text": "none"
+							}
+						]
+					}
+				}
+			}
+		],
+		"_version": "1.1",
+		"_theme": "light"
+	}
+}
