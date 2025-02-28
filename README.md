@@ -27,7 +27,7 @@
 
 ## Introduction
 
-Detection and response to suspicious activities, such as brute-force attacks, are crucial to protecting the digital landscape. Because of this, an SIEM lab is essential to streamline threat detection and mitigate potential threats. This project highlights the setup of an SIEM lab using Splunk Enterprise.
+Detection and response to suspicious activities, such as brute-force attacks, are crucial to protecting the digital landscape. Because of this, an SIEM solution is essential to streamline log collection, enhance threat detection, and support incident response. This project highlights the setup of a SIEM lab using Splunk Enterprise to collect Windows logs and detect suspicious activity such as brute-force logins.
 
 ### Objectives
 1. Download and install Splunk on your local machine/virtual machine
